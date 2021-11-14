@@ -1,0 +1,17 @@
+[{
+    "country": "USA",
+    "exchange": "NASDAQ"
+  },
+  {
+    "country": "USA",
+    "exchange": "NYSE"
+  },
+  {
+    "country": "UK",
+    "exchange": "LSE"
+  },
+  {
+    "country": "TH",
+    "exchange": "BK"
+  }
+]

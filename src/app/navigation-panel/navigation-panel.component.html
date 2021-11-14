@@ -1,0 +1,11 @@
+<mat-toolbar>
+  <h1>{{ title }}</h1>
+  <div class="box">
+    <p>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Get Quote" type="text" [formControl]="stockQuote" (keydown)="QuoteSubmit()">
+        <mat-icon matSuffix (click)="QuoteSubmit()">search</mat-icon>
+      </mat-form-field>
+    </p>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,55 @@
+:host {
+  font-size: 90%;
+}
+
+mat-card-title {
+  padding: 4% 0 4% 2%;
+  line-height: 1.5;
+}
+
+mat-expansion-panel{
+  box-shadow: none !important;
+  width: 17rem;
+}
+
+mat-form-field{
+  padding: 0 0 0 10%;
+}
+
+mat-icon{
+  padding-right: 5%;
+}
+mat-select {
+  font-size: 90%;
+  text-align: center;
+  width: 95%
+}
+
+mat-checkbox {
+  margin-left: 10%;
+}
+
+mat-error {
+  margin: 5% 10%;
+}
+
+.selectBox {
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
+  margin-left: 10%;
+  padding: 2%;
+  width: 35%;
+}
+
+.selectBox:hover{
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.596);
+}
+
+.MetricsSelectBox{
+ padding-top: 4%;
+}
+
+.metricSubmit {
+  padding: 5% 0
+}
+

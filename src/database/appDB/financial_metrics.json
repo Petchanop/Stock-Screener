@@ -1,0 +1,25 @@
+[
+  {
+    "group": "Valuation",
+    "metrics": [
+      "Price/Sales", "Price/Earnings",
+      "Price/Cash Flow", "Price/Book",
+      "Price/Forward Earnings", "PEG Ratio",
+      "Earnings Yield %", "Enterprise Value/EBITDA"
+    ]
+  },
+  {
+    "group": "Operating Performance",
+    "metrics": [
+      "Return on Assets %","Return on Equity %",
+      "Return on Invested Capital %","Gross Margin %",
+      "Operating Margin %","Net Margin %"
+    ]
+  },
+  {
+    "group": "Financial Health",
+    "metrics": [
+      "Debt/Equity","Current Ratio","Quick Ratio"
+    ]
+  }
+]

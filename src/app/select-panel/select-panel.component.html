@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-form-field appearance="outline">
+    <mat-select [placeholder]="Exchangename" formControlName="selectedExchange">
+      <mat-option *ngFor="let market of exchanges" [value]="market.exchange"
+        (click)="ExchangeSelected(market.exchange)">
+        {{ market.exchange }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-card>
+

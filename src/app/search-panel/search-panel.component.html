@@ -1,0 +1,52 @@
+<mat-card>
+  <!-- <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+    <mat-card-title>Exchange</mat-card-title>
+    <div class="selectBox">
+      <mat-select [placeholder]="Exchangename" formControlName="selectedExchange">
+        <mat-option *ngFor="let market of exchanges" [value]="market.exchange"
+          (click)="ExchangeSelected(market.exchange)">
+          {{ market.exchange }}
+        </mat-option>
+      </mat-select>
+    </div>
+    <mat-error class="text-danger" *ngIf="selectboxError">* Selectbox is required.</mat-error>
+    <section class="MetricsSelectBox">
+      <div *ngFor="let data of groups">
+        <mat-card-title> {{ data.group }} </mat-card-title>
+        <div *ngFor="let metric of data.metrics">
+          <label class="metric">
+            <mat-checkbox status="basic" (change)="onCheckboxChange($event, metric)">
+              {{ metric.name }}
+            </mat-checkbox>
+          </label>
+        </div>
+      </div>
+    </section>
+    <div class="metricSubmit">
+      <mat-error class="text-danger" *ngIf="checkboxError">* Checkbox is required.</mat-error>
+      <button mat-raised-button color="primary" value="Submit" (click)="addRatio(groups)">Submit</button>
+    </div>
+  </form> -->
+
+
+  <div *ngFor="let data of groups">
+    <mat-card-title>{{ data.group }}</mat-card-title>
+      <mat-expansion-panel hideToggle *ngFor="let metric of data.metrics">
+          <mat-expansion-panel-header>
+            <mat-panel-title><mat-icon>expand_more</mat-icon>{{ metric.name }}</mat-panel-title>
+          </mat-expansion-panel-header>
+            <mat-form-field appearance="outline">
+              <mat-label>min.</mat-label>
+              <input matInput type="number">
+            </mat-form-field>
+              <mat-form-field appearance="outline">
+              <mat-label>max.</mat-label>
+              <input matInput type="number">
+            </mat-form-field>
+          </mat-expansion-panel>
+  </div>
+  <div class="metricSubmit">
+    <mat-error class="text-danger" *ngIf="checkboxError">* Checkbox is required.</mat-error>
+    <button mat-raised-button color="primary" value="Submit" (click)="addRatio(groups)">Submit</button>
+  </div>
+</mat-card>
